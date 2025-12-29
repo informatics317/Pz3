@@ -88,11 +88,10 @@ class AtbashShifr:
 print('Шифр Атабаш')
 text = 'Happy New Year to all of you!'
 print('Исходный текст:', text)
-print(f'Шифровка: {AtbashShifr().encode(text)}')
-print(f'Дешифровка: {AtbashShifr().decode(shifr.encode(text))}')
-
-
-
+encoded = AtbashShifr().encode(text)
+decoded = AtbashShifr().encode(encoded)
+print(f'Шифровка: {encoded}')
+print(f'Дешифровка: {decoded}')
 
 
 
